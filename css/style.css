@@ -10,6 +10,10 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
+img {
+  max-width: 100%;
+}
+
 ul {
   list-style: none;
 } 
@@ -39,8 +43,8 @@ i {
 }
 
 .product-card {
-  width: calc(100% / 3);
-  min-width: 350px;
+  width: calc(100% / 3 - 20px);
+  min-width: 300px;
   margin-bottom: 45px;
   cursor: pointer;
 }
@@ -148,7 +152,6 @@ main {
 }
 
 .product-card .image img {
-  width: 100%;
   object-fit: contain;  
 }
 
@@ -171,6 +174,12 @@ main {
   text-decoration: line-through;
 }
 
+#product-6 .label.text {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+}
+
 #img-1-hover,
 #img-2-hover,
 #img-3-hover,
@@ -183,12 +192,15 @@ main {
   display: none;
 }
 
-#product-1:hover #img-1-hover {
+#product-1:hover #img-1-hover,
+#product-2:hover #img-2-hover,
+#product-3:hover #img-3-hover,
+#product-4:hover #img-4-hover,
+#product-5:hover #img-5-hover,
+#product-6:hover #img-6-hover {
   display: block;
-  z-index: 2;
+  z-index: 1;
 }
-
-
 
 
 /* FOOTER */
