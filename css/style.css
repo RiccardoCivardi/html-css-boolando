@@ -16,6 +16,7 @@ ul {
 
 a {
   text-decoration: none;
+  margin-right: 10px;
   color: white;
 }
 
@@ -102,7 +103,6 @@ header .menu ul {
 }
 
 header .menu a {
-  margin-right: 10px;
   font-weight: bold;
 }
 
@@ -149,6 +149,7 @@ footer {
   background-color: #1A1A1A;
   height: 100px;
   margin-top: 10px;
+  color: #fff;
 }
 
 footer .container {
@@ -157,14 +158,21 @@ footer .container {
   align-items: center;
 }
 
-footer .conditions {
-  
-  /* DEBUG */
-  background-color: aqua;
+footer h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
 }
 
-footer .icons {
-  
-  /* DEBUG */
-  background-color: aqua;
+footer h4 {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+footer .conditions ul {
+  display: flex;
+  font-size: 0.9rem;
+}
+
+footer .icons i {
+  font-size: 1.3rem;
 }
